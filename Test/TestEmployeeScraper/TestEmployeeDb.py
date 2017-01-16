@@ -138,7 +138,7 @@ class Test_TestEmployeeDb(unittest.TestCase):
         employeeRows = [("bob", "engineering", "usa"), ("fred", "sales", "uk"), ("andy", "finance", "germany")]
 
         #Act
-        deletedEmployees = EmployeeDb.GetDeletedEmployees(employeeRows, employeePage )
+        deletedEmployees = EmployeeDb.GetRemovedEmployees(employeeRows, employeePage )
 
         #Assert
         self.assertEqual(len(deletedEmployees), 1)
