@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "EmployeeScraper", "EmployeeScraper\EmployeeScraper.pyproj", "{B1A5954D-7682-42F1-AEF3-E1BFDFCE421A}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "GigScraper", "GigScraper\GigScraper.pyproj", "{0A768674-172B-41DB-941C-B49D796CF657}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "TorrentScraper", "TorrentScraper\TorrentScraper.pyproj", "{3D28F958-613C-414B-BA9C-4626F2F06766}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{9130D026-E40C-456B-9219-0853D312EB1B}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "TestEmployeeScraper", "Test\TestEmployeeScraper\TestEmployeeScraper.pyproj", "{6030E27E-026B-433A-8B35-895CA16AC948}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "TestGigScraper", "Test\TestGigScraper\TestGigScraper.pyproj", "{8C89A799-FF09-471A-9039-C70432D8298E}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "TestTorrentScraper", "Test\TestTorrentScraper\TestTorrentScraper.pyproj", "{7CE5EAEB-24A6-4C91-B36F-270927F3B1F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1A5954D-7682-42F1-AEF3-E1BFDFCE421A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1A5954D-7682-42F1-AEF3-E1BFDFCE421A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A768674-172B-41DB-941C-B49D796CF657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A768674-172B-41DB-941C-B49D796CF657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D28F958-613C-414B-BA9C-4626F2F06766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D28F958-613C-414B-BA9C-4626F2F06766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6030E27E-026B-433A-8B35-895CA16AC948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6030E27E-026B-433A-8B35-895CA16AC948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C89A799-FF09-471A-9039-C70432D8298E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C89A799-FF09-471A-9039-C70432D8298E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CE5EAEB-24A6-4C91-B36F-270927F3B1F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CE5EAEB-24A6-4C91-B36F-270927F3B1F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6030E27E-026B-433A-8B35-895CA16AC948} = {9130D026-E40C-456B-9219-0853D312EB1B}
+		{8C89A799-FF09-471A-9039-C70432D8298E} = {9130D026-E40C-456B-9219-0853D312EB1B}
+		{7CE5EAEB-24A6-4C91-B36F-270927F3B1F6} = {9130D026-E40C-456B-9219-0853D312EB1B}
+	EndGlobalSection
+EndGlobal
