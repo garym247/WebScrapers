@@ -68,11 +68,15 @@ class EmployeeDb(object):
 
         # Determine which employees have been added and removed.
         employeesToAdd = EmployeeDb.GetNewEmployees(employeeRows, employeePage)
-        employeesToRemove = EmployeeDb.GetDeletedEmployees(employeeRows, employeePage)
+        employeesToRemove = EmployeeDb.GetRemovedEmployees(employeeRows, employeePage)
 
-        # Update the database
-        self.AddEmployees(employeesToAdd)
-        self.RemoveEmployees(employeesToRemove)
+        # Add the new employees tp the database
+        for employee in employeesToAdd:
+            self.Add(employee)
+
+        # Remove the deleted employees from the database (i.e. populate the "dateRemoved" column)
+        for employee in employeesToRemove:
+            self.Remove(employee)
 
     def GetNewEmployees(employeeRows, employeePage):
         newEmployees = []
@@ -89,23 +93,15 @@ class EmployeeDb(object):
 
         return newEmployees
 
-    def GetDeletedEmployees(employeeRows, employeePage):
-        deletedEmployees = []
+    def GetRemovedEmployees(employeeRows, employeePage):
+        removedEmployees = []
 
         for row in employeeRows:
             if not employeePage.HasEmployee(row[0], row[1], row[2]):
                 employee = Employee(row[0], row[1], row[2])
-                deletedEmployees.append(employee)
+                removedEmployees.append(employee)
 
-        return deletedEmployees
-
-    def AddEmployees(self, employees):
-        for employee in employees:
-            self.Add(employee)
-
-    def RemoveEmployees(self, employees):
-        for employee in employees:
-            self.Remove(employee)
+        return removedEmployees        
 
     def Add(self, employee):
         if not self.Exists(employee):
